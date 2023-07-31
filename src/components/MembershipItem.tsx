@@ -1,12 +1,25 @@
 import React from "react";
 import { QuotaData } from "../types/types";
 import { styled } from "styled-components";
+import { humanizeDuration } from "../utils/humanizeDuration";
 
 type MembershipItemProps = {
   quota: QuotaData;
 };
 
 export function MembershipItem(props: MembershipItemProps) {
+  const durationAmericano = humanizeDuration(
+    props.quota.quotas.Americano.Duration
+  );
+
+  const durationCappuccino = humanizeDuration(
+    props.quota.quotas.Cappuccino.Duration
+  );
+
+  const durationEspresso = humanizeDuration(
+    props.quota.quotas.Espresso.Duration
+  );
+
   return (
     <Wrapper>
       <Title>{props.quota.membership}</Title>
@@ -14,20 +27,17 @@ export function MembershipItem(props: MembershipItemProps) {
         <InfoText>
           {props.quota.quotas.Americano.Amount +
             " Americano in " +
-            props.quota.quotas.Americano.Duration +
-            " minutes"}
+            durationAmericano}
         </InfoText>
         <InfoText>
           {props.quota.quotas.Cappuccino.Amount +
             " Cappuccino in " +
-            props.quota.quotas.Cappuccino.Duration +
-            " minutes"}
+            durationCappuccino}
         </InfoText>
         <InfoText>
           {props.quota.quotas.Espresso.Amount +
             " Espresso in " +
-            props.quota.quotas.Espresso.Duration +
-            " minutes"}
+            durationEspresso}
         </InfoText>
       </TextWrapper>
     </Wrapper>
@@ -35,13 +45,11 @@ export function MembershipItem(props: MembershipItemProps) {
 }
 
 const Title = styled.h1`
-  font-family: "Handjet";
   margin: 0 auto 15px auto;
   text-align: center;
 `;
 
 const InfoText = styled.p`
-  font-family: "Handjet";
   margin-bottom: 5px;
   font-size: 1.5rem;
 `;
@@ -54,8 +62,7 @@ const TextWrapper = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid black;
   border-radius: 10px;
   background-color: #fff;

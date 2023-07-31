@@ -37,7 +37,7 @@ const NavWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 `;
 
 const LogoWrapper = styled.div`
@@ -49,7 +49,6 @@ const LogoWrapper = styled.div`
 
 const Banner = styled.h1`
   margin-left: 20px;
-  font-family: "Handjet";
   font-weight: 500;
   transform: scale(1);
   transition: transform 0.5s ease-in-out;
@@ -60,7 +59,6 @@ const Banner = styled.h1`
 `;
 
 const NavLink = styled.h2`
-  font-family: "Handjet";
   margin-left: 50px;
   cursor: pointer;
 

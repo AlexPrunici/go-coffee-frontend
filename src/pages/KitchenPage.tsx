@@ -42,6 +42,4 @@ const Grid = styled.div`
   grid-row-gap: 20px;
 `;
 
-const ColumnName = styled.h2`
-  font-family: "Handjet";
-`;
+const ColumnName = styled.h2``;

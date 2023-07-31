@@ -19,7 +19,6 @@ export function CoffeeItem(props: CoffeeItemProps) {
 }
 
 const Title = styled.h1`
-  font-family: "Handjet";
   margin: 0 auto 35px auto;
   text-align: center;
 `;

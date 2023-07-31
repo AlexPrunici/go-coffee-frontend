@@ -11,7 +11,7 @@ export const customToast = {
         borderRadius: "10px",
         color: "#242424",
         textAlign: "center",
-        fontFamily: "Handjet",
+        fontFamily: "Roboto",
         fonsSize: "20px",
       },
     });
@@ -26,7 +26,7 @@ export const customToast = {
         borderRadius: "10px",
         color: "#242424",
         textAlign: "center",
-        fontFamily: "Handjet",
+        fontFamily: "Roboto",
         fonsSize: "50px",
       },
     });

@@ -66,11 +66,9 @@ const OrderPageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 50px;
 `;
 
 const Title = styled.h1`
-  font-family: "Handjet";
   font-weight: 500;
   margin-bottom: 40px;
 `;
@@ -79,14 +77,12 @@ const BlockWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 50px;
   width: 100%;
 `;
 
 const ButtonWrapper = styled.div`
   display: flex;
   width: 100%;
-  padding: 30px 0;
   justify-content: center;
 `;
 
@@ -94,12 +90,11 @@ const Button = styled.button<{ disabled: boolean }>`
   display: inline-block;
   color: ${(props) => (props.disabled ? "#ccc" : "#915603")};
   font-size: 2.5em;
-  font-family: "Handjet";
   margin: 1em;
   padding: 0.25em 1em;
   border: 2px solid;
   border-color: ${(props) => (props.disabled ? "#ccc" : "#915603")};
-  border-radius: 3px;
+  border-radius: 10px;
   display: block;
   cursor: pointer;
 `;
